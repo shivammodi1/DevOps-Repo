@@ -5,8 +5,16 @@
 - It focuses on collaboration, communication, and integration between software developers and IT operations
 
 # Life-Cycle of DevOps
-```          Dev                                               Ops ```
-Plan -> Code -> Build -> Test -> Release -> Deploy -> Operate -> Monitor-> Plan
+```          Dev                                               Ops
+   +------------------------------------------------+
+   |                                                |
+   |                                                v
+  Plan -> Code -> Build -> Test -> Release -> Deploy -> Operate -> Monitor
+   ^                                                |
+   |                                                |
+   +------------------------------------------------+
+```
+- Plan -> Code -> Build -> Test -> Release -> Deploy -> Operate -> Monitor-> Plan
 
 - It is a continuous process that involves multiple stages
 - Each stage has its own set of tools and practices
