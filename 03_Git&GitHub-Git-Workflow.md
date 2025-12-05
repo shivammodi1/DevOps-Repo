@@ -28,23 +28,30 @@
 
 # Git Workflow Steps:
 
-Jahan hum apne code par kaam karte hain [Working_Directory] se shuru karte hain.
-                                    |
-                                    V
-And When when we write -> git add <file_name> toh
-                                    |
-                                    V
-Hum apne changes ko [Staging_Area] mein le jaate hain (Staged files).
-                                    |
-                                    V
-Phir jab hum likhte hain -> git commit -m "commit message" toh
-                                    |
-                                    V
-Hum apne staged changes ko [Local_Repository] mein save karte hain (Committed files).
-                                    |
-                                    V
-Agar hum likhte hain -> git push origin main toh
-                                    |
-                                    V 
-Hum apne local commits ko [Remote_Repository] mein bhejte hain.
-
+               ┌────────────────────────┐
+               │   Working Directory    │
+               │ (Where you write code) │
+               └──────────┬─────────────┘
+                    git add <file>
+                          |  
+                          V
+               ┌────────────────────┐
+               │    Staging Area    │
+               │ (Ready for commit) │
+               └──────────┬─────────┘
+                          |
+                git commit -m "message"
+                          |  
+                          V
+               ┌────────────────────┐
+               │  Local Repository  │
+               │ (Commits stored)   │
+               └──────────┬─────────┘
+                          |
+                     git push origin main
+                          |
+                          V
+               ┌────────────────────┐
+               │ Remote Repository  │
+               │  (GitHub, GitLab)  │
+               └────────────────────┘
