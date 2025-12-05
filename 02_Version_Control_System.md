@@ -16,6 +16,24 @@
 - git config --global user.email "your.email@example.com" -> To set user information
 - git config --list -> To verify configuration
 
+# Basic Git Commands
+- git init -> To initialize a new Git repository
+- git clone <repository_url> -> To clone an existing repository
+- git status -> To check the status of the repository
+- git add <file_name> -> To stage changes for commit
+- git commit -m "commit message" -> To commit staged changes
+- git push origin <branch_name> -> To push changes to remote repository
+- git pull origin <branch_name> -> To fetch and merge changes from remote repository
+
+- git create branch <branch_name> -> To create a new branch
+- git branch -M main -> To rename the current branch to main
+- git branch -> To list branches
+
+- git checkout <branch_name> -> To switch to a different branch
+- git merge <branch_name> -> To merge a branch into the current branch
+- git log -> To view commit history
+- git remote add origin <repository_url> -> To add a remote repository
+- git fetch -> To fetch changes from remote repository
 
 
 
