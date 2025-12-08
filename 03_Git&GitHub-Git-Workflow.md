@@ -55,3 +55,35 @@
                │ Remote Repository  │
                │  (GitHub, GitLab)  │
                └────────────────────┘
+
+
+# Key Git Commands in Workflow:
+- `git add <file>` : Stages changes in the working directory for the next commit.
+- `git commit -m "message"` : Commits the staged changes to the local repository with a descriptive message.
+- `git push origin <branch>` : Pushes committed changes from the local repository to the remote repository.
+- `git pull origin <branch>` : Fetches and merges changes from the remote repository to the local repository.
+- `git status` : Checks the status of files in the working directory and staging area.
+- `git log` : Views the commit history in the local repository.
+- `git clone <repository_url>` : Clones a remote repository to your local machine.
+- `git checkout <branch_name>` : Switches to a different branch in the local repository.
+- `git merge <branch_name>` : Merges changes from one branch into the current branch.
+- `git branch` : Lists all branches in the local repository.
+- `git remote add origin <repository_url>` : Adds a remote repository to your local repository.
+
+
+# Git-Ignore :
+- A special file named `.gitignore` is used to tell Git which files or directories to ignore in a project.
+- It helps to avoid committing unnecessary files like build files, temporary files, or sensitive information.
+- You can create a `.gitignore` file in the root directory of your project and list the files or patterns you want Git to ignore.
+- Example of `.gitignore` file:
+  ```
+  # Ignore all .log files
+  *.log
+
+  # Ignore the build directory
+  /build/
+
+  # Ignore sensitive files
+  config/secrets.yml
+  ```   
+
