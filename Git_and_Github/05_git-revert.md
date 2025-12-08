@@ -15,9 +15,9 @@ git revert a1b2c3d
 - Is command ko run karne ke baad, Git ek naya commit create karega jo `a1b2c3d` commit ke changes ko undo karega.
 - Agar koi merge conflict hota hai, toh Git aapko notify karega aur aapko manually conflicts ko resolve karna padega.
 
-```
 
-Agar recent commit ka hash value dekhna hian toh
+# Agar recent commit ka hash value dekhna hian toh
+```
 - git log --oneline
 
 ```
