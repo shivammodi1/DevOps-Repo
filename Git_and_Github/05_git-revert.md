@@ -16,7 +16,7 @@ git revert a1b2c3d
 - Agar koi merge conflict hota hai, toh Git aapko notify karega aur aapko manually conflicts ko resolve karna padega.
 
 
-# Agar recent commit ka hash value dekhna hian toh
+# Agar recent commit ka hash value dekhna hain toh
 ```
 - git log --oneline
 
