@@ -26,7 +26,8 @@
 - git pull origin <branch_name> -> To fetch and merge changes from remote repository
 
 - git create branch <branch_name> -> To create a new branch
-- git branch -M main -> To rename the current branch to main
+- git branch -M main -> To rename the current branch to main 
+    ``` hum branch ka naam isliye change krte h kyuki github par default branch ka naam ab "main" hota hai. ```
 - git branch -> To list branches
 
 - git checkout <branch_name> -> To switch to a different branch
