@@ -6,3 +6,12 @@
 - It is just like a creating shortcuts for commands.
 
 # Global Git Aliases
+- Global aliases wo hote hain jo humare system ke har repository me kaam karte hain.
+- Inhe hum git config command ke through create karte hain with the --global flag.
+- Example: 
+```
+git config --global alias.st status
+```
+- Is command ke baad, hum `git st` command ka use karke `git status` command ko run kar sakte hain kisi bhi repository me.
+
+# Local Git Aliases
