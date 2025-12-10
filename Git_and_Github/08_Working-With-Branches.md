@@ -28,7 +28,8 @@ git switch -c <branch-name> (alternative command)
 git branch -d <branch-name>
 ```
 - 6. To Merge a branch in another branch, first switch to the branch you want to merge into, then use:
-```git merge <branch-name>
+```
+git merge <branch-name>
 ```
 
 
