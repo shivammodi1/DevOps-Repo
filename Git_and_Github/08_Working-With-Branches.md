@@ -27,3 +27,12 @@ git switch -c <branch-name> (alternative command)
 ```
 git branch -d <branch-name>
 ```
+- 6. To Merge a branch in another branch, first switch to the branch you want to merge into, then use:
+```git merge <branch-name>
+```
+
+
+# Summary 
+- Like branches hum use krte hain taaki hum same project me multiple persons ke sath alag alag features pe kaam kr sake bina main file k affect kiye.
+- Jaise hi hum new branch create karte hain, switch krne ke baad hum us barnch me koi bhi changes karege to wo sirf usi branch me reflect hoga.
+- Jab hum satisfied hote hain apne changes se, tab hum us branch ko main branch me merge kar dete hain.
