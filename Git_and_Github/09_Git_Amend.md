@@ -5,3 +5,4 @@
 - `git add <file>`: Stage new changes before amending the commit.
 - `git commit --amend`: Amend the most recent commit with staged changes.
 - Be cautious when amending commits that have already been pushed to a shared repository, as it rewrites history.
+- And always remember that try to amend any commit before pushing it to a remote repository to avoid complications.
