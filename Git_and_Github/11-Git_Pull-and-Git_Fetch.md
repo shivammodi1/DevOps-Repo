@@ -69,7 +69,20 @@ git fetch origin
 
 ## 🔍 Summary Table
 
-| Term               | Meaning                                                                 |
-|--------------------|-------------------------------------------------------------------------|
-| **Local Directory** (Local Repository) | Your computer's `.git` storage where commit history and Git data are saved. |
-| **Working Directory** | The files and folders you can see and edit on your computer (your actual project workspace). |
+**Local Directory** (Local Repository) | Your computer's `.git` storage where commit history and Git data are saved. 
+**Working Directory** | The files and folders you can see and edit on your computer (your actual project workspace).
+
+
+## 🔁 Git Fetch Workflow (Professional Diagram)
+- git fetch origin is better than git pull origin main because it gives you more control over when and how to integrate changes from the remote repository into your local branch.
+```
+            git fetch origin
+                    ↓
+       (Review fetched changes & logs)
+                    ↓
+               git status
+                    ↓
+         git merge origin/main
+```
+
+This way, you can review the changes before merging them into your local branch, reducing the risk of conflicts or unwanted changes.
