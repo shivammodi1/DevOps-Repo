@@ -80,9 +80,9 @@ git fetch origin
                     ↓
        (Review fetched changes & logs)
                     ↓
-               git status
+               git status (to see changes)
                     ↓
-         git merge origin/main
+         git merge origin/main (or desired branch)
 ```
 
 This way, you can review the changes before merging them into your local branch, reducing the risk of conflicts or unwanted changes.
