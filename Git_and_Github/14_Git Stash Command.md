@@ -22,3 +22,12 @@ This command reapplies the changes from the most recent stash to your working di
 ```bash
 git stash apply stash@{n}  (where n is the stash index)
 ```
+- To remove the most recent stash after applying it, use:
+```bash
+git stash pop
+```
+
+- To remove a specific stash after applying it, use:
+```bash
+git stash drop stash@{n}  (where n is the stash index)
+```
