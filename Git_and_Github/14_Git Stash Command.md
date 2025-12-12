@@ -11,3 +11,14 @@ This command saves your modified tracked files and staged changes to a new stash
 git stash list
 ```
 This will display a list of all stashes along with their identifiers.
+
+- To apply the most recent stash without removing it from the stash list, use:
+```bash
+git stash apply
+```
+This command reapplies the changes from the most recent stash to your working directory.
+
+- To apply a specific stash, use:
+```bash
+git stash apply stash@{n}  (where n is the stash index)
+```
