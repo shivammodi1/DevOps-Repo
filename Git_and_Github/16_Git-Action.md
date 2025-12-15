@@ -44,7 +44,8 @@ jobs:
 ```
 
 # Workflow Execution Process
-```             ┌────────────────┐
+```            
+                ┌────────────────┐
                 │ Event Occurs   │
                 │ (push, PR)     │
                 └───────┬────────┘
