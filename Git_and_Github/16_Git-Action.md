@@ -42,6 +42,39 @@ jobs:
     - name: Run tests
       run: npm test
 ```
+
+# Workflow Execution Process
+```             ┌────────────────┐
+                │ Event Occurs   │
+                │ (push, PR)     │
+                └───────┬────────┘
+                        │
+                        ▼
+                ┌───────────────┐
+                │   Workflow    |
+                │   starts      |
+                │  (.yml file)  │
+                └───────┬───────┘
+                        │
+                        ▼
+                ┌───────────────┐
+                │      Job      │
+                │ (build/test)  │
+                └───────┬───────┘
+                        │
+                        ▼
+                ┌───────────────┐
+                │     Step      │
+                │ (commands)    │
+                └───────┬───────┘
+                        │
+                        ▼
+                ┌───────────────┐
+                │    Runner     │
+                │ (VM/Machine)  │
+                └───────────────┘
+
+```
 # Popular Use Cases of GitHub Actions
 - Continuous Integration and Continuous Deployment (CI/CD).
 - Automated Testing.
