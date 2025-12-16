@@ -12,7 +12,21 @@
 Here is an example of a simple GitHub Actions workflow YAML file:
 
 ```yaml
-name : Shivam Modi Workflow  # Name of the workflow
+name: Shivam Modi Workflow        # 1. Name of the workflow displays in GitHub Actions tab
 
-on:                          # Event that triggers the workflow
-    push:
+on:                               # 2. THE TRIGGER
+  push:                           # Runs when a push is made
+    branches: [ "main" ]          # Only runs if the push is to the 'main' branch
+
+jobs:                             # 3. THE JOBS
+  demo-job:                       # Name of this specific job
+    runs-on: ubuntu-latest        # The OS (Runner) where this job executes
+
+    steps:                        # 4. THE STEPS
+      - name: Greetings           # Step A: A descriptive name
+        run: echo "Hello, Shivam Modi!" 
+      
+      - name: Run a script        # Step B: Another task
+        run: echo "This is my first automated action!"
+
+```
