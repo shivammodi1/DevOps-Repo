@@ -38,7 +38,7 @@ jobs:                             # 3. THE JOBS
 -
 
 
-## Basic Format of Cron Syntax
+## Basic Format of Cron Syntax (CRON-> Command Run ON)
 -  *  *  *  *  *
 -  |  |  |  |  |
 -  |  |  |  |  +---- Day of the week (0 - 7) (Sunday=0 or 7)
