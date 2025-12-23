@@ -29,6 +29,6 @@ container scanning, aur dependency scanning.
 | Security Features  | Advanced aur comprehensive security | Basic security features               |
 | Kubernetes Support | Native Kubernetes integration       | Limited Kubernetes support            |
 | Pricing Model      | Free + paid plans                   | Free + paid plans                     |
-
+| Free Repo          | Unlimited private repo              | Limited private repos in free plan    |
 
 
