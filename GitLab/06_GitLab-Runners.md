@@ -9,3 +9,14 @@
    - Ideal for small to medium projects.
    - Used for public repositories by default.
 
+2. **Group Runners**:
+   - Available to all projects within a specific group.
+   - Managed by group owners.
+   - Useful for organizations with multiple related projects.
+
+3. **Specific Runners**:
+   - Dedicated to a single project.
+   - Managed by project maintainers.
+   - Suitable for projects with specific requirements or heavy workloads.
+
+   
