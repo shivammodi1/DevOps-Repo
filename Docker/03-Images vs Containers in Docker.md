@@ -30,3 +30,10 @@
 - The *recipe* for the dish is like a *Docker Image* (blueprint/template).
 - When I follow the recipe and cook the dish, the *cooked dish* is like a *Docker Container* (running instance of the image).
 - If I want to cook the same dish again, I can use the same recipe (image) without rewriting it.
+
+ ________________                ________________                       _______________
+|                |              |                |                     |               |
+|                |   Build      |                |      Run            |    Docker     |
+|   Docker File  |  -------->   |  Docker Image  | ---------------->   |   Container   |
+|                |              |                |                     |               |
+|________________|              |________________|                     |_______________|
