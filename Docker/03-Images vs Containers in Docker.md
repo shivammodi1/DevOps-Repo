@@ -13,6 +13,7 @@
 
 ## Important questions:
 **1. Why container are called isolated?**
+- Without disturbing the host system it will manage its own dependencies and environment.
 - Becuase each container runs independently and does not interfere with other containers or the host system.
 
 **2. Can we have multiple containers from the same image?**
