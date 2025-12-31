@@ -23,3 +23,9 @@
 
 **4. Why Docker containers are lightweight?**
 - Beacause yeh host system ke kernel ko share karte hain, jisse resources ka efficient use hota hai aur fast startup times milte hain.
+
+## Real Life Example:
+- Let's suppose I want to cook a dish (application).
+- The *recipe* for the dish is like a *Docker Image* (blueprint/template).
+- When I follow the recipe and cook the dish, the *cooked dish* is like a *Docker Container* (running instance of the image).
+- If I want to cook the same dish again, I can use the same recipe (image) without rewriting it.
