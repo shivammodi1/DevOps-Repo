@@ -17,3 +17,8 @@ In this example, `node:14` is the base image that includes Node.js version 14 an
 
 ---
 
+# Docker Hub :
+- It is a *cloud-based repository* for Docker images.
+- It allows you to **store, share, and manage** your Docker images.
+- It provides pre-built images.
+- Here developers can **push and pull** images.
