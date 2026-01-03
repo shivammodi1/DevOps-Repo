@@ -22,3 +22,21 @@ In this example, `node:14` is the base image that includes Node.js version 14 an
 - It allows you to **store, share, and manage** your Docker images.
 - It provides pre-built images.
 - Here developers can **push and pull** images.
+- It is similar to GitHub but specifically for Docker images.
+
+# Docker Desktop :
+- It is GUI-based tool to run Docker on your local machine.
+- It provides an easy way to manage Docker containers and images.
+- It includes Docker Engine, Docker CLI, Docker Compose and Kubernetes.
+- Helps in building , running and managing containers.
+- It provides more features than Docker Hub beacuse it is a local tool and Docker Hub is a cloud-based repository.
+---
+### 🔹 Summary :
+Base Image Docker ka starting point hota hai, jiske upar hum apni application build karte hain.
+Isse hume already ready environment mil jata hai (jaise Node, Python, Linux), isliye time aur effort dono save hote hain.
+FROM keyword use karke hum base image define karte hain.
+
+Docker Hub se hume ready-made images milti hain (cloud-based), aur Docker Desktop se hum apne local system par containers ko easily build, run aur manage kar sakte hain.
+
+👉 Simple words mein:
+Base image + Dockerfile = Fast, consistent aur reliable application setup 🚀
