@@ -25,7 +25,7 @@ In this example, `node:14` is the base image that includes Node.js version 14 an
 - It is similar to GitHub but specifically for Docker images.
 
 # Docker Desktop :
-- It is GUI-based tool to run Docker on your local machine.
+- It is GUI-based tool to run Docker on your local machine. 
 - It provides an easy way to manage Docker containers and images.
 - It includes Docker Engine, Docker CLI, Docker Compose and Kubernetes.
 - Helps in building , running and managing containers.
