@@ -36,7 +36,7 @@ server.listen(port, () => {
 2. Add the following content to the `Dockerfile`:
    ```Dockerfile
    # Use the official Node.js image as the base image
-   FROM node:14
+   FROM node:latest
 
    # Set the working directory inside the container
    WORKDIR /usr/src/app
@@ -66,7 +66,7 @@ server.listen(port, () => {
    - `-t my-node-app`: Tags the image with the name `my-node-app`.
    - `.`: Specifies the current directory as the build context.
 
-## Step 4: Run the Docker Container
+<!-- ## Step 4: Run the Docker Container
 1. After the image is built, you can run a container using the following command:
    ```bash
    docker run -p 3000:3000 my-node-app
@@ -74,4 +74,4 @@ server.listen(port, () => {
    - `-p 3000:3000`: Maps port 3000 of the container to port 3000 on your host machine.
    - `my-node-app`: Name of the Docker image you just built.                
 2. Open your web browser and navigate to `http://localhost:3000`. You should see "Hello, World!" displayed in the browser.
-
+ -->
