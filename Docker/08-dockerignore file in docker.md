@@ -1,0 +1,1 @@
+# .dockerignore File in Docker
