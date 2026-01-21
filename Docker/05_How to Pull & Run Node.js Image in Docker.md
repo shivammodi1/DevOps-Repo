@@ -13,11 +13,11 @@
 ## Running a Node.js Container
 1. Once the image is pulled, you can run a container using the following command:
     ```bash
-    docker run -it --name my-node-app -p 3000:3000 node
+    docker run -it node /bin/bash
     ```
     - `-it`: Runs the container in interactive mode with a terminal.
-    - `--name my-node-app`: Names the container "my-node-app".
-    - `-p 3000:3000`: Maps port 3000 of the container to port 3000 on your host machine.
+    - `node`: Name of the Node.js image.
+    - `/bin/bash`: Starts a Bash shell inside the container.
 2. This command will start a Node.js REPL (Read-Eval-Print Loop) inside the container. You can now run Node.js commands directly.
 3. To exit the Node.js REPL, type `.exit` and press Enter.
 4. To stop the container, you can use the following command:

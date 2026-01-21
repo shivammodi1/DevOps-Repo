@@ -75,3 +75,8 @@ server.listen(port, () => {
    - `my-node-app`: Name of the Docker image you just built.                
 2. Open your web browser and navigate to `http://localhost:3000`. You should see "Hello, World!" displayed in the browser.
  -->
+
+# To check how many images are there
+- ```bash
+   docker images
+   ```
