@@ -1,13 +1,13 @@
 # Create & Manage Multiple Docker Images
 
-## After adding some changes to ypur Application code, you need to rebuild the Docker image
+## After adding some changes to ypur Application code, you need to rebuild the Docker image (Not a best practice to create multiple images for same application)
 ```bash
 docker build -t <your_image_name>:<tag> .
 ```
-## but we can also create versions of the same image with different tags rather cretating multiple images
+## But we can also create versions of the same image with different tags rather cretating multiple images(Best practice)
 ```bash
-docker build -t myapp:1.0 .
-docker build -t myapp:latest .
+docker build -t my-app:1.0 .
+docker build -t my-app:latest .
 ```
 
 
