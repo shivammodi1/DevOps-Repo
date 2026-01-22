@@ -8,19 +8,15 @@ app.get('/', (req, res) => {
 });
 
 app.get('/health', (req, res) => {
-  res.send('OK - The server is healthy!');
+  res.send('Server is healthy!');
 });
 
-// working with volumes so it will reflect changes without rebuilding the image
-app.get('/user',(req,res)=>{
-    const name = req.params.name;
-    res.send(`Hello, ${name}! Welcome to the Dockerized Express App.`);
-})
+
 
 app.get('/user/:id/:name' ,(req,res)=>{
   const id = req.params.id;
   const name = req.params.name;
-  res.send(`User ID: ${id}, Name: ${name}`);
+  res.send(`Hello ${name} how are you! Your ID is ${id}`);
 });
 
 

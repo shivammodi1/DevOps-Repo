@@ -1,5 +1,16 @@
 FROM node:latest
+RUN npm install -g nodemon
+WORKDIR /app
 COPY . .
 RUN npm install
 EXPOSE 3000
-CMD ["node", "index.js"]
+CMD ["npm", "run", "dev"]
+
+
+# 1. line is the base image
+# 2. line installs nodemon globally
+# 3. for volumes we need to set the working directory inside the container
+# 4. line copies all files from the host to the container
+# 5. line installs the dependencies listed in package.json
+# 6. line exposes port 3000
+# 7. line specifies the command to run the application
