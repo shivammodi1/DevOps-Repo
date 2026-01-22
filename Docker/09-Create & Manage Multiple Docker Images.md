@@ -1,5 +1,17 @@
 # Create & Manage Multiple Docker Images
 
+## After adding some changes to ypur Application code, you need to rebuild the Docker image
+```bash
+docker build -t <your_image_name>:<tag> .
+```
+## but we can also create versions of the same image with different tags rather cretating multiple images
+```bash
+docker build -t myapp:1.0 .
+docker build -t myapp:latest .
+```
+
+
+
 ## To delete all images and containers
 ```bash
 docker system prune -a
@@ -17,4 +29,3 @@ docker rmi <image_id>
 ```bash
 docker images
 ```
-
