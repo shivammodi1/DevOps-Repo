@@ -1,0 +1,11 @@
+version: '3.8'    # Specify the version of the Docker Compose file format
+services:
+  gitlab-server:                            # Define the GitLab service
+    image: 'gitlab/gitlab-ce'               # Use the Community Edition of GitLab
+    container_name: my-gitlab-server        # container name
+    ports:
+      - '8000:80'                           # Map host port 8000 to container port 80 (HTTP)
+    environment:
+      GITLAB_OMNIBUS_CONFIG: |               # pipe(|) allows multi-line string
+        gitlab_rails['initial_root_password'] = 'Shivam@123456789'
+        puma['worker_processes'] = 0
