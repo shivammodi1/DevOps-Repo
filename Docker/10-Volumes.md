@@ -15,8 +15,8 @@
 
 ## Creating a Volume
 - We can create a volume using the following command:
-```
- docker run --name my-container -p 3000:3000 --rm -v "C:/DevOps/Docker/Docker-Image:/app" my-node-app
+```bash
+docker run --name my-container -p 3000:3000 --rm -v "C:/DevOps/Docker/Docker-Image:/app" my-node-app
 ```
 - Here the `-v` flag is used to create a volume.
 - my-node-app is the image name.
