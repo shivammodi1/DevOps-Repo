@@ -9,3 +9,9 @@ services:
       GITLAB_OMNIBUS_CONFIG: |               # pipe(|) allows multi-line string
         gitlab_rails['initial_root_password'] = 'Shivam@123456789'
         puma['worker_processes'] = 0
+    
+    volumes:
+      - ./config:/etc/gitlab    # Configuration files store at this path on the host
+      - ./logs:/var/log/gitlab  # Log files store at this path on the host
+      - ./data:/var/opt/gitlab # Data files store at this path on the host
+
