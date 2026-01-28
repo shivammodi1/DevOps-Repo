@@ -1,0 +1,12 @@
+# GitLab Docker runtime data
+GitLab on Docker/**/data/
+GitLab on Docker/**/logs/
+GitLab on Docker/**/config/
+GitLab on Docker/**/gitlab-runner/
+
+# Unix socket files
+*.socket
+
+# OS junk
+.DS_Store
+Thumbs.db

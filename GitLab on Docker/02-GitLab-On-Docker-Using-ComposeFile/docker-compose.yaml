@@ -3,15 +3,31 @@ services:
   gitlab-server:                            # Define the GitLab service
     image: 'gitlab/gitlab-ce'               # Use the Community Edition of GitLab
     container_name: my-gitlab-server        # container name
+    hostname: my-gitlab-server             # hostname same as container name
+    restart: always                         # Always restart the container if it stops
     ports:
       - '8000:80'                           # Map host port 8000 to container port 80 (HTTP)
     environment:
       GITLAB_OMNIBUS_CONFIG: |               # pipe(|) allows multi-line string
         gitlab_rails['initial_root_password'] = 'Shivam@123456789'
         puma['worker_processes'] = 0
+        external_url 'http://my-gitlab-server'  # Set the external URL for GitLab
     
     volumes:
       - ./config:/etc/gitlab    # Configuration files store at this path on the host
       - ./logs:/var/log/gitlab  # Log files store at this path on the host
       - ./data:/var/opt/gitlab # Data files store at this path on the host
 
+
+
+  gitlab-runner:    # Define the GitLab Runner service
+    image: 'gitlab/gitlab-runner:latest'           # Use the official GitLab Runner image
+    container_name: my-gitlab-runner        # container name
+    restart: always                         # Always restart the container if it stops
+    depends_on:
+      - gitlab-server                     # isme basically gitlab server pe depend kr rha hain mtlb jab tak gitlab server start nhi hoga tab tk ye start nhi hoga
+    volumes:
+      - ./gitlab-runner/config:/etc/gitlab-runner  # Configuration files store at this path on the host
+      - /var/run/docker.sock:/var/run/docker.sock # Mount Docker socket for Docker-in-Docker functionality
+
+    privileged: true # so runner easily run docker containers using this.
