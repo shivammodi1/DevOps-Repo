@@ -19,4 +19,3 @@
 | Deployment Speed     | Slow, requires physical setup            | Fast, can be deployed in minutes         |
 | Risk Management      | Higher risk of data loss and downtime    | Built-in redundancy and disaster recovery|
 ----
-
